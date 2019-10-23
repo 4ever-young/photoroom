@@ -6,7 +6,7 @@
     $mostpopular = 0;
 
     foreach ($all_files as $file){
-        if ($file!='.' && $file!='..' && $file!='gallery.php') {
+        if ($file!='.' && $file!='..' && $file!='..' && $file!='.idea' && $file!='.git' && $file!='assets' && $file!='bootstrap' && $file!='images' && $file!='site' && $file!='gallery.php') {
             $filename = ".\\".$file; // создание пути обращения
 
             $page = file_get_contents(__DIR__.$filename);
