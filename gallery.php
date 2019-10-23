@@ -6,34 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Фотогалеррея JoiL</title>
-    <!-- Bootstrap core CSS -->
+    <title>Фотомастерская JoiL</title>
     <link href="bootstrap/css/theme.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="style.css" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Raleway:300,700,900,500' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href='assets/css/googleapis.css' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="assets/css/cdnjs_2.7.css">
+    <link rel="stylesheet" href="assets/css/maxcdn.css">
+
     <link rel="stylesheet" href="assets/css/pushy.css">
     <link rel="stylesheet" href="assets/css/masonry.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
 
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="assets/js/masonry.js"></script>
+    <script src="assets/js/pushy.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+    <!-- fancyBox CSS -->
+    <link href="bootstrap/fancybox-master/dist/jquery.fancybox.min.css" rel="stylesheet">
+
+    <!-- fancyBox JS -->
+    <script src="bootstrap/fancybox-master/dist/jquery.fancybox.min.js"></script>
+
+    <style>
+        .thumb img {
+            -webkit-filter: grayscale(0);
+            filter: none;
+            border-radius: 5px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 5px;
+        }
+
+        .thumb img:hover {
+            -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+        }
+
+        .thumb {
+            padding: 5px;
+        }
+    </style>
 </head>
 <body class="">
 
-<!-- Site Overlay -->
 <div class="site-overlay"></div>
 
 <header id="home">
     <div class="container-fluid">
-        <!-- change the image in style.css to the class header .container-fluid [approximately row 50] -->
+
         <div class="container">
             <div class="row">
                 <div class="col-md-2 col-xs-12">
@@ -53,55 +81,53 @@
 </header>
 
 <section id="photos" class="gallery wow fadeInUp" data-wow-delay="400ms">
+    <h4 style="text-align: center">Работы наших мастеров</h4>
     <div class="container">
         <div class="row">
-            <h3 style="text-align: center">Работы лучших мастеров</h3>
-            <div class="masonry image-gallery">
-                <div class="grid-sizer"></div>
-                <div class="gutter-sizer"></div>
-                <div class="item item-width2">
-                    <a href="images/my9.jpg">
-                        <img src="images/my9.jpg" alt="" />
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="images/my4.jpg">
-                        <img src="images/my4.jpg" alt="" />
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="images/my2.jpg">
-                        <img src="images/my2.jpg" alt="" />
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="images/my3.jpg">
-                        <img src="images/my3.jpg" alt="" />
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="images/my5.jpg">
-                        <img src="images/my5.jpg" alt="" />
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="images/my6.jpg">
-                        <img src="images/my6.jpg" alt="" />
-                    </a>
-                </div>
-                <div class="item item-width2">
-                    <a href="images/my8.jpg">
-                        <img src="images/my8.jpg" alt="" />
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="images/my1.jpg">
-                        <img src="images/my1.jpg" alt="" />
-                    </a>
-                </div>
+            <div class="col-lg-9 col-md-4 col-2 thumb">
+                <a data-fancybox="gallery" href="images/photo/my4.jpg">
+                    <img class="img-fluid" src="images/photo/my4.jpg" alt="...">
+                </a>
             </div>
+            <div class="col-lg-9 col-md-4 col-4 thumb">
+                <a data-fancybox="gallery" href="images/photo/my9.jpg">
+                    <img class="img-fluid" src="images/photo/my9.jpg" alt="...">
+                </a>
+            </div>
+            <div class="col-lg-9 col-md-4 col-6 thumb">
+                <a data-fancybox="gallery" href="images/photo/my1.jpg">
+                    <img class="img-fluid" src="images/photo/my1.jpg" alt="...">
+                </a>
+            </div>
+            <div class="col-lg-9 col-md-4 col-6 thumb">
+                <a data-fancybox="gallery" href="images/photo/my5.jpg">
+                    <img class="img-fluid" src="images/photo/my5.jpg" alt="...">
+                </a>
+            </div>
+            <div class="col-lg-9 col-md-4 col-6 thumb">
+                <a data-fancybox="gallery" href="images/photo/my3.jpg">
+                    <img class="img-fluid" src="images/photo/my3.jpg" alt="...">
+                </a>
+            </div>
+            <div class="col-lg-9 col-md-4 col-6 thumb">
+                <a data-fancybox="gallery" href="images/photo/my6.jpg">
+                    <img class="img-fluid" src="images/photo/my6.jpg" alt="...">
+                </a>
+            </div>
+            <div class="col-lg-9 col-md-4 col-6 thumb">
+                <a data-fancybox="gallery" href="images/photo/my2.jpg">
+                    <img class="img-fluid" src="images/photo/my2.jpg" alt="...">
+                </a>
+            </div>
+            <div class="col-lg-9 col-md-4 col-6 thumb">
+                <a data-fancybox="gallery" href="images/photo/my8.jpg">
+                    <img class="img-fluid" src="images/photo/my8.jpg" alt="...">
+                </a>
+            </div>
+
         </div>
     </div>
+
 </section>
 
 
@@ -113,35 +139,11 @@
                 <p>© 2019 Создано <a target="_blank" href="#">JoiL</a></p>
             </div>
             <div class="col-md-4">
-                <p class="text-right social"><i class="typcn typcn-social-facebook-circular"></i><i class="typcn typcn-social-twitter-circular"></i><i class="typcn typcn-social-tumbler-circular"></i></p>
+                <p class="text-right social"></p>
             </div>
         </div>
     </div>
 </footer>
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.0.4/js/bootstrap-scrollspy.js"></script>
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-<script src="http://masonry.desandro.com/masonry.pkgd.js"></script>
-<script src="assets/js/masonry.js"></script>
-<script src="assets/js/pushy.min.js"></script>
-<script src="assets/js/jquery.magnific-popup.min.js"></script>
-<script src="assets/js/wow.min.js"></script>
-<script src="assets/js/scripts.js"></script>
+
 </body>
 </html>
-
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-34344036-1', 'auto');
-    ga('send', 'pageview');
-
-</script>

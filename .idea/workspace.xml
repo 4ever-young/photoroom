@@ -1,7 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac6c0959-47cc-40a2-a525-8229c2be2d1f" name="Default Changelist" comment="" />
+    <list default="true" id="ac6c0959-47cc-40a2-a525-8229c2be2d1f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mountain-king-html.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check_reg.php" beforeDir="false" afterPath="$PROJECT_DIR$/check_reg.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dop/calc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gallery.php" beforeDir="false" afterPath="$PROJECT_DIR$/gallery.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gloss.php" beforeDir="false" afterPath="$PROJECT_DIR$/gloss.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/back.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/img_block3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/img_block_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/img_block_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/key.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/main.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/my1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/my10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/my2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/my3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/my4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/my5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/my6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/my8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/my9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/masters.php" beforeDir="false" afterPath="$PROJECT_DIR$/masters.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new_order.php" beforeDir="false" afterPath="$PROJECT_DIR$/new_order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new_order_after.php" beforeDir="false" afterPath="$PROJECT_DIR$/new_order_after.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/price.php" beforeDir="false" afterPath="$PROJECT_DIR$/price.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/registration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +63,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../web_lab_1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -64,6 +99,7 @@
       <workItem from="1570601194313" duration="10531000" />
       <workItem from="1571090394166" duration="4281000" />
       <workItem from="1571161740129" duration="23870000" />
+      <workItem from="1571786231850" duration="7154000" />
     </task>
     <servers />
   </component>

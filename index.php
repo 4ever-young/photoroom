@@ -7,29 +7,30 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <title>Фотомастерская JoiL</title>
-        <!-- Bootstrap core CSS -->
         <link href="bootstrap/css/theme.css" rel="stylesheet">
-        <!-- Custom styles for this template -->
-        <link href="style.css" rel="stylesheet">
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href='assets/css/googleapis.css' rel='stylesheet' type='text/css'>
 
-      <style src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></style>
-    <![endif]-->
-        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Raleway:300,700,900,500' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/cdnjs_2.7.css">
+        <link rel="stylesheet" href="assets/css/maxcdn.css">
+
         <link rel="stylesheet" href="assets/css/pushy.css">
         <link rel="stylesheet" href="assets/css/masonry.css">
         <link rel="stylesheet" href="assets/css/animate.css">
         <link rel="stylesheet" href="assets/css/magnific-popup.css">
 
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+
+        <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+        <script src="assets/js/masonry.js"></script>
+        <script src="assets/js/pushy.min.js"></script>
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
     </head>
+
     <body class="">
-      <!-- Pushy Menu -->
       <nav class="pushy pushy-left">
         <ul class="list-unstyled">
             <li><a href="registration.php">Войти</a></li>
@@ -43,25 +44,23 @@
         </ul>
       </nav>
 
-      <!-- Site Overlay -->
       <div class="site-overlay"></div>
-
         <header id="home">
             <div class="container-fluid">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-2 col-xs-12">
                             <a href="index.php" class="thumbnail logo">
-                                <img src="images/logo.png" alt="" class="img-responsive">
+                                <img src="images/ico/logo.png" alt="" class="img-responsive">
                             </a>
                         </div>
                         <div class="col-md-1 col-md-offset-9 col-xs-2 text-center">
                             <div class="menu-btn"><span class="hamburger">&#9776;</span></div>
                         </div>
                         <div class="col-md-1 col-md-offset-9 col-xs-2 text-center">
-                            <div><a href="registration.php"><span class="hamburger"><img src="/images/key.png"> </span></a> </div>
+                            <div><a href="registration.php"><span class="hamburger"><img src="/images/ico/key-icon.png"> </span></a> </div>
                         </div>
-                    </div>
+                     </div>
                     <div class="jumbotron">
                         <h1 style="text-shadow: black 3px 5px 4px"><small>Главная фотостудия Волгограда</small></br>
 						<strong style="text-shadow: black 6px 9px 6px">JoiL</strong></h1>
@@ -75,17 +74,17 @@
             <div class="container">
                 <div class="row features">
                     <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="100ms">
-                        <a href="gallery.php" style="color: #535353"><span class="typcn typcn-bookmark x3"></span></a>
+                        <a href="gallery.php" style="color: #535353"><img src="images/ico/bookmark-icon.png"></a>
                         <h4><a href="gallery.php" style="color: red">Посмотрите наши работы</a> </h4>
                         <p>Обратите внимание на фотографии с прошлых съемок, возможно некоторые варианты станут Вам интересны. Также вы можете обсудить свои варианты лично с фотографом</p>
                     </div>
                     <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="300ms">
-                        <a href="new_order.php" style="color: #535353"><span class="typcn typcn-pencil x3"></span></a>
+                        <a href="new_order.php" style="color: #535353"><img src="images/ico/pensil-icon.png"></a>
                         <h4><a href="new_order.php" style="color: red">Опишите свою идею</a> </h4>
                         <p>Креатив - всегда круто! Опытные специалисты помогут вам реализовать самые безбашенные идеи и раскрыть Ваш потенциал</p>
                     </div>
                     <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="500ms">
-                        <a href="#" style="color: #535353"><span class="typcn typcn-camera-outline x3"></span></a>
+                        <a href="#" style="color: #535353"><img src="images/ico/camera-icon.png"></a>
                         <h4><a href="#" style="color: red">Проведите незабываемый фотосет</a></h4>
                         <p>Решившись на съемку - главное не переживать. Скила наших ребят достаточно, чтобы помочь Вам расслабиться и получить удовольствие!</p>
                     </div>
@@ -134,7 +133,7 @@
                             <i>Единственное, на чем Вы должны быть сконцентрированы во время съемки - собственные желания, остальное исполнитель работы берет на себя!</i>
                         </p>
                         <br><br>
-                        <a class="btn btn-danger btn-lg" href="masters.php"> К странице с мастерами <i class="fa fa-arrow-circle-o-right"></i> </a>
+                        <a class="btn btn-danger btn-lg" href="masters.php"> К странице с мастерами </a>
                     </div>
                     <div class="col-md-5">
                         <a href="#">
@@ -170,7 +169,6 @@
                                                 "price" => "500"],
                                         ];
                                         ?>
-                                        
                                         <table class="lead">
                                             <?php
                                             foreach($array as $arr){
@@ -185,7 +183,7 @@
                                         </table></p>
                                     <br><br>
 
-                                    <a class="btn btn-danger btn-lg" href="price.php"> К странице с расценками <i class="fa fa-arrow-circle-o-right"></i> </a>
+                                    <a class="btn btn-danger btn-lg" href="price.php"> К странице с расценками </a>
                                     <p><i style="color: #555555">Цены на экслюзивные работы<br>
                                     оговариваются лично с мастером</i></p>
                                 </div>
@@ -199,7 +197,7 @@
       <br><br>
 
         <section id="contact" class="prefooter wow fadeInUp" data-wow-delay="300ms">
-            <!-- change the image in style.css to the class .prefooter .container-fluid [approximately row 154] -->
+
             <div class="container-fluid">
                 <div class="container">
                     <div class="row">
@@ -229,35 +227,14 @@
                         <p>© 2019 Создано <a target="_blank" href="#">JoiL</a></p>
                     </div>
                     <div class="col-md-4">
-                        <p class="text-right social"><i class="typcn typcn-social-facebook-circular"></i><i class="typcn typcn-social-twitter-circular"></i><i class="typcn typcn-social-tumbler-circular"></i></p>
+                        <p class="text-right social">
+                            <!-- докинуть лого соцсетей и ссыль на реп -->
+                            </p>
                     </div>
                 </div>
             </div>
         </footer>
-        <!-- Bootstrap core JavaScript
-    ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-      <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.0.4/js/bootstrap-scrollspy.js"></script>
-        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-        <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-        <script src="http://masonry.desandro.com/masonry.pkgd.js"></script>
-        <script src="assets/js/masonry.js"></script>
-        <script src="assets/js/pushy.min.js"></script>
-        <script src="assets/js/jquery.magnific-popup.min.js"></script>
-        <script src="assets/js/wow.min.js"></script>
-        <script src="assets/js/scripts.js"></script>
+
     </body>
 </html>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-34344036-1', 'auto');
-  ga('send', 'pageview');
-
-</script>

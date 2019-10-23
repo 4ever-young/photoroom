@@ -16,7 +16,6 @@
     $mysql->close();
 
 
-    //header('Location: /');
     exit();
 
 ?>
