@@ -1,37 +1,33 @@
 <?php
-    $dir = '/OSPanel/domains/photoroom/for_gloss/';
+    $dir = '/OSPanel/domains/photoroom/';
     $all_files = scandir($dir);
-    //var_dump($all_files);
     $count = 2;
     $gloss = [[]];
-
+    $mostpopular = 0;
 
     foreach ($all_files as $file){
-        //var_dump($file);
-        if ($file!='.'&&$file!='..') {
-            echo "./for_gloss/".$file;
-            //$file = file_get_contents('./for_gloss/file_test.html');
+        if ($file!='.' && $file!='..' && $file!='gallery.php') {
+            $filename = ".\\".$file; // создание пути обращения
 
-            $page = strip_tags($file); // минус теги
-            //strpos_all - все вхождения
+            $page = file_get_contents(__DIR__.$filename);
 
-            str_replace(".", "", $page);
-            str_replace(",", "", $page);
-            str_replace(":", "", $page);
-            str_replace("-", "", $page);
+            $page = strip_tags($page); // минус теги  //strpos_all - все вхождения
+            $page = preg_replace('/[^ a-zа-яё\d]/ui', '', $page); // уберем все, кроме русских букв
 
-            $line = explode(" ",$page);
-            $num_for_gloss = 0;
+            $sequence = explode(" ",$page);
 
-            foreach ($line as $word) {
-                if (array_key_exists($word, $gloss)){
-                    $gloss[$word][1] = $gloss[$word][1] + 1;
-                } else {
-                    $gloss[$word][0] = $word;
-                    $gloss[$word][1] = 1;
-                    $gloss[$word][2] = $file;
-                }
-            }
+            foreach ($sequence as $word)
+                if(strlen($word)>6) // уберем все предлоги, местоимения. // ctype_alpha($word) - проверка на символьность
+                    if (array_key_exists($word, $gloss)){
+                        $gloss[$word][1] = $gloss[$word][1]+1;
+                        if ($mostpopular < $gloss[$word][1])
+                            $mostpopular = $gloss[$word][1];
+                    } else {
+                        $gloss[$word][0] = $word;
+                        $gloss[$word][1] = 1;
+                        $gloss[$word][2] = $file;
+                    }
+
         }
     }
 
@@ -92,15 +88,14 @@
 <section id="feat">
     <div class="container">
         <div class="row features">
-
-            <br><br><br>
+            <h4 style="text-align: center">Наиболее упортребляемые слова на сайте</h4><br>
             <?php
             foreach ($gloss as $word) {
-
-                $str = '<a href="for_gloss/'.$word[2].'">'.$word[1].'</a> <br>';
-                echo $str;
+                if ($word != "" && $word != " " && $word != "" && ($word[1]> ($mostpopular-($mostpopular/1.5))) ){ // деление - оптимальное вычленение самых популярных
+                    $str = '<a href="'.$word[2].'">'.$word[0]." </a> - ".$word[1].' раз <br>';
+                    echo $str;
+                }
             }
-            //var_dump($gloss);
             ?>
             <br><br><br><br><br><br>
 

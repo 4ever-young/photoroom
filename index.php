@@ -40,7 +40,6 @@
             <li><a href="#news">Наша команда</a></li>
             <li><a href="#history">Прайс-лист</a></li>
             <li><a href="#contact">Напишите нам!</a></li>
-            <li><a href="dop/calc.php">Бесполезный калькулятор</a></li>
         </ul>
       </nav>
 

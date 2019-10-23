@@ -65,7 +65,7 @@ session_start();
             ?>
 
                 <div class="col-md-12 text-center wow fadeInUp" data-wow-delay="500ms">
-                    <span class="typcn typcn-camera-outline x3"></span>
+                    <img src="images/ico/camera-icon.png">
                     <h4>Запись на фотоссессию</h4>
 
                     <form name="form" action="new_order_after.php" method="post">
