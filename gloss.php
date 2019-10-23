@@ -1,7 +1,6 @@
 <?php
     $dir = '/OSPanel/domains/photoroom/';
     $all_files = scandir($dir);
-    $count = 2;
     $gloss = [[]];
     $mostpopular = 0;
 
@@ -11,13 +10,13 @@
 
             $page = file_get_contents(__DIR__.$filename);
 
-            $page = strip_tags($page); // минус теги  //strpos_all - все вхождения
+            $page = strip_tags($page); // минус теги
             $page = preg_replace('/[^ a-zа-яё\d]/ui', '', $page); // уберем все, кроме русских букв
 
             $sequence = explode(" ",$page);
 
             foreach ($sequence as $word)
-                if(strlen($word)>6) // уберем все предлоги, местоимения. // ctype_alpha($word) - проверка на символьность
+                if(strlen($word)>6) // уберем все предлоги, местоимения (все, что менее трех символов)
                     if (array_key_exists($word, $gloss)){
                         $gloss[$word][1] = $gloss[$word][1]+1;
                         if ($mostpopular < $gloss[$word][1])

@@ -4,7 +4,6 @@ if($_POST['sent'] == 'out'){
     setcookie('user', null, -1, '/');
     session_start();
     unset($_SESSION['user_id']);
-    //session_destroy();
 }
 else
 if($_POST['sent'] == 'come'){
@@ -132,7 +131,7 @@ else if ($_POST['sent'] == 'reg'){
 <script>
     $(document).ready(function () {
         $('#registration_button').click(function (event) {
-            var str = '<span class="typcn typcn-lock-closed-outline x3"></span>\n' +
+            var str = '<img src="images/ico/block-icon.png"> \n' +
                 '                <h4>Авторизация</h4>\n' +
                 '                <form name="form" action="" method="post">\n' +
                 '\n' +
@@ -193,8 +192,6 @@ else if ($_POST['sent'] == 'reg'){
                         </div>
                     </div>
 
-
-
                         <?php
                         if ($err == 1){
                             echo '<div class="form-group col-sm-12" style="color: red">Проверьте правльность пароля</div>';
@@ -206,8 +203,6 @@ else if ($_POST['sent'] == 'reg'){
                             echo '<div class="form-group col-sm-12" style="color: red">Этот номер телефона уже авторизован!</div>';
                         }
                         ?>
-
-
 
 
                     <div class="row">

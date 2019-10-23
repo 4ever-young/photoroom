@@ -40,6 +40,7 @@
             <li><a href="#news">Наша команда</a></li>
             <li><a href="#history">Прайс-лист</a></li>
             <li><a href="#contact">Напишите нам!</a></li>
+            <li><a href="gloss.php">Наш глоссарий</a></li>
         </ul>
       </nav>
 

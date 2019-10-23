@@ -1,5 +1,41 @@
 <?php
 session_start();
+if (isset($_POST["done"])) {
+
+    if($_POST["date"] == ""){
+        $err = 1;
+        //echo "Введите корректную дату!";
+    }
+    else if ($_POST["time"] = ""){
+        $err = 2;
+        //echo "Введите корректное время!";
+    }
+
+    else{
+        $time = filter_var(trim($_POST['time']),
+            FILTER_SANITIZE_STRING);
+        $time = date('H:i:s');
+        //$time = time($time);
+        $date = filter_var(trim($_POST['date']),
+            FILTER_SANITIZE_STRING);
+        $type = filter_var(trim($_POST['type']),
+            FILTER_SANITIZE_STRING);
+        $location = filter_var(trim($_POST['location']),
+            FILTER_SANITIZE_STRING);
+        $creator_id = filter_var(trim($_POST['creator_id']),
+            FILTER_SANITIZE_STRING);
+        $user_id = $_SESSION['user_id'];
+
+        $mysql = new mysqli('localhost','root', '1111', 'photoroom');
+        $mysql->query("INSERT INTO `price_list` (`id_price`, `type`, `location`, `creator_id`, `date`, `time`, `status`, `user_id`, `order_time`) VALUES (NULL ,'$type', '$location', '$creator_id', '$date', '$time', 0, '$user_id', now())");
+        $mysql->close();
+
+
+        header('Location: new_order_after.php');
+    }
+
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -68,7 +104,7 @@ session_start();
                     <img src="images/ico/camera-icon.png">
                     <h4>Запись на фотоссессию</h4>
 
-                    <form name="form" action="new_order_after.php" method="post">
+                    <form name="form" action="" method="post">
 
                         <div class="row">
                             <div class="form-group col-sm-6">
@@ -116,11 +152,7 @@ session_start();
                                 foreach ($creators as $creator){
                                     echo '<option value="'.$creator[0].'">'.$creator[1].'</option>';
 
-
                                 }
-
-
-
                                 ?>
                                 </select>
                                 <?php
