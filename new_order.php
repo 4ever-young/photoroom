@@ -155,9 +155,6 @@ if (isset($_POST["done"])) {
                                 }
                                 ?>
                                 </select>
-                                <?php
-
-                                ?>
                             </div>
                         </div>
 
