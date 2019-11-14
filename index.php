@@ -86,7 +86,7 @@
                 <li><a href="#news">Наша команда</a></li>
                 <li><a href="#history">Прайс-лист</a></li>
                 <li><a href="#contact">Напишите нам!</a></li>
-                <li><a href="gloss.php">Наш глоссарий</a></li>
+                <li><a href="view/gloss.php">Наш глоссарий</a></li>
             </ul>
         </nav>
 
@@ -105,7 +105,7 @@
                     </div>
                     <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="500ms">
                         <a href="#" style="color: #535353"><img src="images/ico/camera-icon.png"></a>
-                        <h4><a href="" style="color: red">Просмотрите свои заказы</a></h4>
+                        <h4><a href="view/all_orders.php" style="color: red">Просмотрите свои заказы</a></h4>
                         <p>Решившись на съемку - главное не переживать. Скила наших ребят достаточно, чтобы помочь Вам расслабиться и получить удовольствие!</p>
                     </div>
                 </div>
