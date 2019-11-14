@@ -2,9 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac6c0959-47cc-40a2-a525-8229c2be2d1f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/logic/check_new_order.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logic/new_order.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/auth_success.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/order_not_auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/order_with_auth.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_order.php" beforeDir="false" afterPath="$PROJECT_DIR$/new_order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check_order.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/check_reg.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/check_user.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gallery.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/masters.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new_order.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new_order_after.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/price.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/registration.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/use cases.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,11 +46,12 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../1" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\photoroom\php\output" />
       <recent name="C:\OSPanel\domains\photoroom\for_gloss" />
     </key>
   </component>
@@ -68,7 +83,11 @@
       <workItem from="1570601194313" duration="10531000" />
       <workItem from="1571090394166" duration="4281000" />
       <workItem from="1571161740129" duration="23870000" />
-      <workItem from="1571786231850" duration="18718000" />
+      <workItem from="1571786231850" duration="18843000" />
+      <workItem from="1572332717457" duration="3748000" />
+      <workItem from="1572442069145" duration="9713000" />
+      <workItem from="1573615424239" duration="12029000" />
+      <workItem from="1573701170383" duration="3742000" />
     </task>
     <servers />
   </component>

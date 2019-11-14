@@ -1,12 +1,13 @@
 <?php
-if($_POST['sent'] == 'out'){
+if($_POST['action_button'] == 'exit'){
     unset($_COOKIE['user']);
     setcookie('user', null, -1, '/');
     session_start();
     unset($_SESSION['user_id']);
 }
 else
-if($_POST['sent'] == 'come'){
+
+if($_POST['action_button'] == 'auth'){
     $phone = filter_var(trim($_POST['phone']),
         FILTER_SANITIZE_STRING);
     $password = filter_var(trim($_POST['password']),
@@ -38,7 +39,7 @@ if($_POST['sent'] == 'come'){
         }
     }
 }
-else if ($_POST['sent'] == 'reg'){
+else if ($_POST['action_button'] == 'reg'){
 
     $name = filter_var(trim($_POST['name']),
         FILTER_SANITIZE_STRING);
@@ -151,16 +152,16 @@ else if ($_POST['sent'] == 'reg'){
                 '                    </div>\n' +
                 '                    <div class="row">\n' +
                 '                        <div class="form-group col-sm-6">\n' +
-                '                            <button type="submit" id="registration_button_use" class="btn btn-success btn-lg pull-center" name="sent" value="reg">Зарегистрироваться</button>\n' +
+                '                            <button type="submit" id="registration_button_use" class="btn btn-success btn-lg pull-center" name="action_button" value="reg">Зарегистрироваться</button>\n' +
                 '                        </div>\n' +
                 '                        <div class="form-group col-sm-6">\n' +
-                '                            <button type="button" id="come_button" class="btn btn-success btn-lg pull-center" name="sent" value="come">Войти с учетной записи</button>\n' +
+                '                            <button type="button" id="auth_button" class="btn btn-success btn-lg pull-center" name="action_button" value="auth">Войти с учетной записи</button>\n' +
                 '                        </div>\n' +
                 '                    </div>\n' +
                 '                </form>';
             $("#action_reg_block").html(str);
 
-            $('#come_button').click(function (event) {
+            $('#auth_button').click(function (event) {
                 window.location.reload();
             });
             <?php
@@ -207,10 +208,10 @@ else if ($_POST['sent'] == 'reg'){
 
                     <div class="row">
                         <div class="form-group col-sm-6">
-                            <button type="button" id="registration_button" class="btn btn-success btn-lg pull-center" name="sent" value="reg">Зарегистрироваться</button>
+                            <button type="button" id="registration_button" class="btn btn-success btn-lg pull-center" name="action_button" value="reg">Зарегистрироваться</button>
                         </div>
                         <div class="form-group col-sm-6">
-                            <button type="submit" id="come_button_use" class="btn btn-success btn-lg pull-center" name="sent" value="come">Войти с учетной записи</button>
+                            <button type="submit" id="auth_button_use" class="btn btn-success btn-lg pull-center" name="action_button" value="auth">Войти с учетной записи</button>
                         </div>
                     </div>
                 </form>
@@ -231,7 +232,7 @@ else if ($_POST['sent'] == 'reg'){
                     <form name="form" action="" method="post">
                         <div class="row">
                             <div class="form-group col-sm-12">
-                                <button type="submit" id="exit" class="btn btn-success btn-lg pull-center" name="sent" value="out">Выйти из учетной записи</button>
+                                <button type="submit" id="exit" class="btn btn-success btn-lg pull-center" name="action_button" value="exit">Выйти из учетной записи</button>
                             </div>
                         </div>
                     </form>
