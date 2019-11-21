@@ -22,37 +22,40 @@ include "../tmp/header.html";
 <section id="feat">
     <div class="container">
         <div class="row features">
+            <div class="col-md-12 text-center wow fadeInUp" data-wow-delay="500ms" id="action_reg_block">
+                <img src="../images/ico/bookmark-icon.png">
 
-            <table>
-                <tr>
-                    <th> № </th>
-                    <th> Фотограф </th>
-                    <th> Тип съемки </th>
-                    <th> Место </th>
-                    <th> Заказано на </th>
-                    <th> Статус </th>
-                </tr>
-            <?php
-            $counter = 1;
-            foreach ($list as $el){
-                /*echo $counter; $counter++;
-                foreach ($el as $item) {
-                    echo "<td>".$item."</td>";
-                }*/
+                <h4>Список заказов</h4>
 
-                echo "<tr>";
-                echo "<td> ".$counter."</td>";
-                echo "<td> ".$el[0]."</td>";
-                echo "<td> ".$el[1]."</td>";
-                echo "<td> ".$el[2]."</td>";
-                echo "<td> ".$el[3]."</td>";
-                echo "<td> ".$el[4]."</td>";
-                echo "</tr>";
-            }
+                <table class="table">
+                    <tr>
+                        <th class="text-center"> № </th>
+                        <th class="text-center"> Фотограф </th>
+                        <th class="text-center"> Тип съемки </th>
+                        <th class="text-center"> Место </th>
+                        <th class="text-center"> Заказано на </th>
+                        <th class="text-center"> Статус </th>
+                    </tr>
+                    <?php
+                    $counter = 1;
+                    foreach ($list as $el){
+                        echo "<tr>";
+                        echo "<td> ".$counter."</td>";
+                        echo "<td> ".$el[0]."</td>";
+                        echo "<td> ".$el[1]."</td>";
+                        echo "<td> ".$el[2]."</td>";
+                        echo "<td> ".$el[3]."</td>";
 
-            ?>
-            </table>
+                        if($el[4] == 0) echo "<td> В обработке </td>";
+                        if($el[4] == 1) echo "<td> Одобрено </td>";
+                        if($el[4] == 2) echo "<td> Заверщено </td>";
+                        echo "</tr>";
+                        $counter++;
+                    }
 
+                    ?>
+                </table>
+            </div>
         </div>
     </div>
 </section>

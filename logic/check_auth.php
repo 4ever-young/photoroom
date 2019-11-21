@@ -56,7 +56,9 @@ if ($_POST['action_button'] == 'reg'){
     if(!$check){
         session_start();
 
-        $mysqli->query("INSERT INTO `user` (`name`, `pas`, `phone`) VALUES ('$name', '$password','$phone')");
+        $sql = "INSERT INTO `user` (`name`, `pas`, `phone`, `flag_del`) VALUES ('$name', '$password','$phone', 0)";
+
+        $mysqli->query($sql);
 
         $res = $mysqli->query("SELECT id, name, pas FROM `user` where `phone` = '$phone' ");
         $user = $res->fetch_assoc();

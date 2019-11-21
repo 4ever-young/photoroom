@@ -1,5 +1,9 @@
 <?php
 require_once ('../tmp/header.html');
+$mysql = new mysqli('localhost','root', '1111', 'photoroom');
+
+$res = $mysql->query("SELECT id, name FROM `creator`");
+$creators = $res->fetch_all();
 ?>
 
 <section id="feat">
@@ -10,7 +14,7 @@ require_once ('../tmp/header.html');
                 <img src="../images/ico/camera-icon.png">
                 <h4>Запись на фотоссессию</h4>
 
-                <form name="form" action="" method="post">
+                <form name="form" action="../logic/check_new_order.php" method="post">
 
                     <div class="row">
                         <div class="form-group col-sm-6">
@@ -24,37 +28,32 @@ require_once ('../tmp/header.html');
                         <div class="form-group col-sm-6" aria-required="true">
                             <label for="type" class="h4">Тип съемки</label>
                             <select name="type" class="form-control">
-                                <option value="1">Свадебная</option>
-                                <option value="2" selected="selected">Праздник</option>
-                                <option value="3">Вечеринка</option>
-                                <option value="4">Вечеринка</option>
-                                <option value="5">С ребенком</option>
-                                <option value="6">Школьная/студенческая</option>
-                                <option value="7">Видеосъемка</option>
-                                <option value="8">Съемка с воздуха</option>
-                                <option value="9">Другое</option>
+                                <option value="Свадебная">Свадебная</option>
+                                <option value="Выходная фотосессия">Выходная фотосессия</option>
+                                <option value="День рождения" selected="selected">День рождения</option>
+                                <option value="Вечеринка">Вечеринка</option>
+                                <option value="С ребенком">С ребенком</option>
+                                <option value="Выпускной">Выпускной</option>
+                                <option value="Видеосъемка">Видеосъемка</option>
+                                <option value="Съемка с воздуха">Съемка с воздуха</option>
+                                <option value="Другое">Другое</option>
                             </select>
                         </div>
                         <div class="form-group col-sm-6">
                             <label for="location" class="h4 ">Локация</label>
                             <select name="location" class="form-control">
-                                <option value="1">Центр</option>
-                                <option value="2" selected="selected">Город</option>
-                                <option value="3">Выезд за город</option>
-                                <option value="4">На берегу</option>
-                                <option value="5">Другое</option>
+                                <option value="Центр">Центр</option>
+                                <option value="Город" selected="selected">Город</option>
+                                <option value="Выезд за город">Выезд за город</option>
+                                <option value="На берегу">На берегу</option>
+                                <option value="Другое">Другое</option>
                             </select>
                         </div>
                         <div class="form-group col-sm-12">
                             <label for="creator" class="h4 ">Фотограф</label>
                             <select name="creator_id" class="form-control">
                                 <?php
-                                $mysql = new mysqli('localhost','root', '1111', 'photoroom');
 
-                                $res = $mysql->query("SELECT id, name FROM `creator`");
-                                $creators = $res->fetch_all();
-
-                                $strimg = "";
                                 foreach ($creators as $creator){
                                     echo '<option value="'.$creator[0].'">'.$creator[1].'</option>';
 

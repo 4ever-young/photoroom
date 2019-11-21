@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac6c0959-47cc-40a2-a525-8229c2be2d1f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/view/all_orders.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gloss.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/order_not_auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/order_not_auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic/authorization.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/authorization.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic/check_auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/check_auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic/check_new_order.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/check_new_order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/new_order_after.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/new_order_after.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/all_orders.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/all_orders.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/order_with_auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/order_with_auth.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +37,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -75,7 +78,9 @@
       <workItem from="1572332717457" duration="3748000" />
       <workItem from="1572442069145" duration="9713000" />
       <workItem from="1573615424239" duration="12029000" />
-      <workItem from="1573701170383" duration="7331000" />
+      <workItem from="1573701170383" duration="8309000" />
+      <workItem from="1574235596443" duration="751000" />
+      <workItem from="1574354711842" duration="4106000" />
     </task>
     <servers />
   </component>
