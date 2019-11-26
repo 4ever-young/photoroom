@@ -4,48 +4,6 @@ $err = isset($err) ? $err : 0; // тип ошибки заполнения по�
 
 ?>
 
-<script>
-    $(document).ready(function () {
-        $('#registration_button').click(function (event) {
-            var str = '<img src="images/ico/block-icon.png"> \n' +
-                '                <h4>Авторизация</h4>\n' +
-                '                <form name="form" action="" method="post">\n' +
-                '\n' +
-                '                    <div class="row">\n' +
-                '                        <div class="form-group col-sm-12">\n' +
-                '                            <label for="name" class="h4">Имя</label>\n' +
-                '                            <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" required>\n' +
-                '                        </div>\n' +
-                '                        <div class="form-group col-sm-12">\n' +
-                '                            <label for="phone" class="h4">Телефон</label>\n' +
-                '                            <input type="text" class="form-control" name="phone" id="phone" placeholder="+7 (---) (---) (-- --)" required>\n' +
-                '                        </div>\n' +
-                '                        <div class="form-group col-sm-12">\n' +
-                '                            <label for="password" class="h4">Пароль</label>\n' +
-                '                            <input type="password" class="form-control" name="password" id="pas" placeholder="Enter password" required>\n' +
-                '                        </div>\n' +
-                '                    </div>\n' +
-                '                    <div class="row">\n' +
-                '                        <div class="form-group col-sm-6">\n' +
-                '                            <button type="submit" id="registration_button_use" class="btn btn-success btn-lg pull-center" name="action_button" value="reg">Зарегистрироваться</button>\n' +
-                '                        </div>\n' +
-                '                        <div class="form-group col-sm-6">\n' +
-                '                            <button type="button" id="auth_button" class="btn btn-success btn-lg pull-center" name="action_button" value="auth">Войти с учетной записи</button>\n' +
-                '                        </div>\n' +
-                '                    </div>\n' +
-                '                </form>';
-            $("#action_reg_block").html(str);
-
-            $('#auth_button').click(function (event) {
-                window.location.reload();
-            });
-            <?php
-            if ($err == 3)  echo "$('#err').html('Этот номер телефона уже авторизован!')";
-            ?>
-        });
-    });
-</script>
-
 <section id="feat">
     <div class="container">
         <div class="row features">

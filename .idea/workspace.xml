@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac6c0959-47cc-40a2-a525-8229c2be2d1f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/css/buttons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logic/admin_upd_order_sheet.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logic/admin_upd_user_sheet.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/admin_order_sheet.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/admin_user_sheet.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logic/authorization.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/authorization.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logic/check_auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/check_auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logic/check_new_order.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/check_new_order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/new_order_after.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/new_order_after.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/registration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/all_orders.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/all_orders.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/order_with_auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/order_with_auth.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +30,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -37,11 +42,15 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/App/app/ISDMU" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\photoroom\assets\css" />
+      <recent name="C:\OSPanel\domains\photoroom\view" />
+      <recent name="C:\OSPanel\domains\photoroom\logic" />
       <recent name="C:\OSPanel\domains\photoroom\php\output" />
       <recent name="C:\OSPanel\domains\photoroom\for_gloss" />
     </key>
@@ -80,7 +89,10 @@
       <workItem from="1573615424239" duration="12029000" />
       <workItem from="1573701170383" duration="8309000" />
       <workItem from="1574235596443" duration="751000" />
-      <workItem from="1574354711842" duration="4106000" />
+      <workItem from="1574354711842" duration="7451000" />
+      <workItem from="1574410663731" duration="658000" />
+      <workItem from="1574548076443" duration="8731000" />
+      <workItem from="1574749751499" duration="6651000" />
     </task>
     <servers />
   </component>
