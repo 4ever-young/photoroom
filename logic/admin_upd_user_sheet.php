@@ -3,18 +3,16 @@ session_start();
 include "db.php";
 
 if($_POST['action'] == "Сохранить"){
-    $order_id = $_POST['order_id'];
-    $creator_id = $_POST['creator'];
-    $order_time = $_POST['order_time'];
-    $location = $_POST['location'];
-    $type = $_POST['type'];
+    $user_id = $_POST['user_id'];
+    $name = $_POST['name'];
+    $phone = $_POST['phone'];
 
-    updUser($mysqli, $order_id, $creator_id, $order_time, $location, $type);
+    updUser($mysqli, $user_id, $name, $phone);
 
 }
 else
     if($_POST['action'] == "Удалить"){
-        $order_id = $_POST['order_id'];
+        $order_id = $_POST['user_id'];
 
         delUser($mysqli, $order_id);
 

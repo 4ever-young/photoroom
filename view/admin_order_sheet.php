@@ -149,10 +149,7 @@ require_once('../tmp/header.html');
                         </div>
 
                         <?php
-                        $counter++;
                     }
-
-
                     ?>
                 </table>
 

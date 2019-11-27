@@ -59,4 +59,24 @@ function delOrder($mysqli, $order_id){
     return 1;
 };
 
+function updUser($mysqli, $user_id, $name, $phone){
+    $sql = "UPDATE user 
+            SET name = '$name',
+            phone    = '$phone'
+             
+            WHERE id = '$user_id'";
+    $request = $mysqli->query($sql);
+
+    return 1;
+};
+
+function delUser($mysqli, $user_id){
+    $sql = "UPDATE user SET flag_del = 1 WHERE id = '$user_id';";
+    $request = $mysqli->query($sql);
+    $sql = "UPDATE price_list SET flag_del = 1 WHERE user_id = '$user_id';";
+    $request = $mysqli->query($sql);
+
+    return 1;
+};
+
 ?>
