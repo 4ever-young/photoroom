@@ -1,9 +1,9 @@
 <?php
 require_once ('../tmp/header.html');
-$mysql = new mysqli('localhost','root', '1111', 'photoroom');
+include "../logic/db.php";
 
-$res = $mysql->query("SELECT id, name FROM `creator`");
-$creators = $res->fetch_all();
+
+$creators = getCreatorCreatorId($mysqli);
 ?>
 
 <section id="feat">
@@ -53,10 +53,8 @@ $creators = $res->fetch_all();
                             <label for="creator" class="h4 ">Фотограф</label>
                             <select name="creator_id" class="form-control">
                                 <?php
-
                                 foreach ($creators as $creator){
                                     echo '<option value="'.$creator[0].'">'.$creator[1].'</option>';
-
                                 }
                                 ?>
                             </select>
