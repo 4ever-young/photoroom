@@ -139,6 +139,7 @@ require_once('../tmp/header.html');
                                     </div>
                                     <div class="modal-footer">
                                         <form action="../logic/admin_upd_order_sheet.php" method="post">
+                                            <input type="text" name="order_id" class="form-control" style="display: none;" value="<?php echo $order[0]; ?>">
                                             <input type="submit" class="button_delete" name="action" value="Удалить">
                                         </form>
                                         <input type="button" class="button_rewrite" data-dismiss="modal" value="Нет">

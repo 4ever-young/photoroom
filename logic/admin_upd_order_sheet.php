@@ -2,7 +2,6 @@
 session_start();
 include "db.php";
 
-
 if($_POST['action'] == "Сохранить"){
     $order_id = $_POST['order_id'];
     $creator_id = $_POST['creator'];
@@ -12,12 +11,13 @@ if($_POST['action'] == "Сохранить"){
 
     updOrder($mysqli, $order_id, $creator_id, $order_time, $location, $type);
 
-
 }
 else
 if($_POST['action'] == "Удалить"){
+    $order_id = $_POST['order_id'];
 
-    print_r($_POST);
+    delOrder($mysqli, $order_id);
+
 }
 
 $order_list = getOrderList($mysqli);

@@ -52,12 +52,11 @@ function updOrder($mysqli, $order_id, $creator_id, $order_time, $location, $type
     return 1;
 };
 
-function delOrder($mysqli, $order_id, $order){
-    $sql = "SELECT id, name, phone FROM `user` WHERE id > 1 AND user.flag_del = 0;";
+function delOrder($mysqli, $order_id){
+    $sql = "UPDATE price_list SET flag_del = 1 WHERE id_price = '$order_id';";
     $request = $mysqli->query($sql);
-    $result = $request->fetch();
 
-    return $result;
+    return 1;
 };
 
 ?>
