@@ -39,15 +39,25 @@ function getOrderList($mysqli){
 };
 
 
-function updOrder($mysqli, $order_id, $creator_id, $order_time, $location, $type){
-    $sql = "UPDATE price_list 
+
+function updOrder($mysqli, $order_id, $creator_id, $order_time, $location, $type, $user_id){
+
+    $sql_check = "SELECT * FROM price_list WHERE id_price  = '$order_id' and flag_del = 0";
+    $request = $mysqli->query($sql_check);
+    $result_order = $request->fetch_assoc();
+    $sql_check = "SELECT * FROM user WHERE id = '$user_id' and flag_del = 0";
+    $request = $mysqli->query($sql_check);
+    $result_user = $request->fetch_assoc();
+    if (isset($result_order['id_price']) and isset($result_user['id'])) {
+        $sql = "UPDATE price_list 
             SET creator_id = '$creator_id',
             order_time = '$order_time',
             location = '$location',
             type = '$type'
              
             WHERE id_price = '$order_id'";
-    $request = $mysqli->query($sql);
+        $request = $mysqli->query($sql);
+    }
 
     return 1;
 };
@@ -60,12 +70,18 @@ function delOrder($mysqli, $order_id){
 };
 
 function updUser($mysqli, $user_id, $name, $phone){
-    $sql = "UPDATE user 
+
+    $sql_check = "SELECT * FROM user WHERE id = '$user_id' and flag_del = 0";
+    $request = $mysqli->query($sql_check);
+    $result = $request->fetch_all();
+    if (isset($result['id'])){
+        $sql = "UPDATE user 
             SET name = '$name',
             phone    = '$phone'
              
             WHERE id = '$user_id'";
-    $request = $mysqli->query($sql);
+        $request = $mysqli->query($sql);
+    }
 
     return 1;
 };

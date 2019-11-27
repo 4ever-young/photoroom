@@ -72,6 +72,7 @@ require_once('../tmp/header.html');
                                     <div class="modal-body">
                                         <form action="../logic/admin_upd_order_sheet.php" method="post">
                                             <input type="text" name="order_id" class="form-control" style="display: none;" value="<?php echo $order[0]; ?>">
+                                            <input type="text" name="user_id" class="form-control" style="display: none;" value="<?php echo $order[5]; ?>">
                                             <div class="form-group">
                                                 <label class="col-form-label">Фотограф</label>
                                                 <select name="creator" class="form-control">

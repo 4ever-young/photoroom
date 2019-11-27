@@ -4,12 +4,13 @@ include "db.php";
 
 if($_POST['action'] == "Сохранить"){
     $order_id = $_POST['order_id'];
+    $user_id = $_POST['user_id'];
     $creator_id = $_POST['creator'];
     $order_time = $_POST['order_time'];
     $location = $_POST['location'];
     $type = $_POST['type'];
 
-    updOrder($mysqli, $order_id, $creator_id, $order_time, $location, $type);
+    updOrder($mysqli, $order_id, $creator_id, $order_time, $location, $type, $user_id);
 
 }
 else
