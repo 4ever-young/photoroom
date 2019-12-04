@@ -8,6 +8,7 @@ require_once('../tmp/header.html');
     <div class="container">
         <div class="row features">
             <div class="col-md-12 text-center wow fadeInUp" data-wow-delay="500ms" id="action_reg_block">
+
                 <img src="../images/ico/bookmark-icon.png">
 
                 <h4>Список заказов</h4>
