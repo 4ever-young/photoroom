@@ -68,6 +68,21 @@ function getOrderListFilter($mysqli, $category, $city, $location, $creator){
 };
 
 
+function getOrder($mysqli, $order_id){
+    $sql = "SELECT id_price, user.name, creator.name, order_time, location, user.id, creator.id, category.name, creator.city
+            FROM `price_list` 
+            JOIN user on user.id = user_id
+            JOIN creator on creator.id = creator_id
+            JOIN category on price_list.type = category.id
+            WHERE price_list.flag_del = 0 
+            AND id_price = ".$order_id;
+    $result = $mysqli->query($sql);
+
+    $order_list = $result->fetch_all();
+
+    return $order_list;
+};
+
 
 function updOrder($mysqli, $order_id, $creator_id, $order_time, $location, $type, $user_id){
 

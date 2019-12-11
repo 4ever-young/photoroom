@@ -115,8 +115,8 @@ if($_SESSION['user_id'] == 1) {
                         $creators = $_SESSION['creators'];
                         $counter = 0;
                         foreach ($_SESSION['order_list'] as $order) {
-                            echo "<tr>";
-                            echo "<td>$order[0]</td>";
+                            echo " <tr>";
+                            echo "<td><a href='order.php?id=".$order[0]."'>$order[0]</a></td>";
                             echo "<td>$order[1]</td>";
                             echo "<td>$order[2]</td>";
                             echo "<td>$order[3]</td>";
