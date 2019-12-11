@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac6c0959-47cc-40a2-a525-8229c2be2d1f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/js/YaWeatherAPI.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic/admin_upd_order_sheet.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/admin_upd_order_sheet.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic/admin_upd_user_sheet.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/admin_upd_user_sheet.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic/check_auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/check_auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/db.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/admin_order_sheet.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/admin_order_sheet.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/auth_success.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/auth_success.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/старая помойка/new_order.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/старая помойка/registration.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/order_with_auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/order_with_auth.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +39,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/App/app/ISDMU" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
@@ -89,7 +90,9 @@
       <workItem from="1574410663731" duration="658000" />
       <workItem from="1574548076443" duration="8731000" />
       <workItem from="1574749751499" duration="19204000" />
-      <workItem from="1575433715842" duration="6665000" />
+      <workItem from="1575433715842" duration="8531000" />
+      <workItem from="1575487108400" duration="23000" />
+      <workItem from="1575894690274" duration="12505000" />
     </task>
     <servers />
   </component>

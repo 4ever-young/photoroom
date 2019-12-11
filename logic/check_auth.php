@@ -14,13 +14,14 @@ if($_POST['action_button'] == 'auth'){
 
     $password = md5($password."qwe175xzc");
 
-    $res = $mysqli->query("SELECT id, name, pas FROM `user` where `phone` = '$phone' ");
+    $res = $mysqli->query("SELECT id, name, pas, avatar FROM `user` where `phone` = '$phone' ");
     $user = $res->fetch_assoc();
 
     if ($user['pas'] == $password){
 
         $_SESSION['user_id'] = $user['id'];
         $_SESSION['user_name'] = $user['name'];
+        $_SESSION['avatar'] = $user['avatar'];
 
         setcookie('user', $user['name'], time()+3600, "/");
 

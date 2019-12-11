@@ -9,8 +9,16 @@ $mysqli = new mysqli($host,$user, $passwd, $dbname);
 
 $code_for_md5 = "qwe175xzc";
 
-function getCreatorCreatorId($mysqli){
+function getCreatorList($mysqli){
     $sql = "SELECT id, name FROM `creator`";
+    $result = $mysqli->query($sql);
+    $creator_list = $result->fetch_all();
+
+    return $creator_list;
+}
+
+function getCategoryList($mysqli){
+    $sql = "SELECT id, name FROM `category`";
     $result = $mysqli->query($sql);
     $creator_list = $result->fetch_all();
 
@@ -26,11 +34,32 @@ function getUserList($mysqli){
 };
 
 function getOrderList($mysqli){
-    $sql = "SELECT id_price, user.name, creator.name, order_time, location, user.id, creator.id, price_list.type
+    $sql = "SELECT id_price, user.name, creator.name, order_time, location, user.id, creator.id, category.name, creator.city
             FROM `price_list` 
             JOIN user on user.id = user_id
             JOIN creator on creator.id = creator_id
+            JOIN category on price_list.type = category.id
             WHERE price_list.flag_del = 0;";
+    $result = $mysqli->query($sql);
+
+    $order_list = $result->fetch_all();
+
+    return $order_list;
+};
+
+function getOrderListFilter($mysqli, $category, $city, $location, $creator){
+    $sql = "SELECT id_price, user.name, creator.name, order_time, location, user.id, creator.id, category.name, creator.city
+            FROM `price_list` 
+            JOIN user on user.id = user_id
+            JOIN creator on creator.id = creator_id
+            JOIN category on price_list.type = category.id
+            WHERE price_list.flag_del = 0 ";
+
+    if($category != "") $sql .= " AND category.id = '".$category."'";
+    if($city != "")     $sql .= " AND creator.city = '".$city."'";
+    if($location != "") $sql .= " AND price_list.location = '".$location."'";
+    if($creator != "")  $sql .= " AND creator.id = '".$creator."'";
+
     $result = $mysqli->query($sql);
 
     $order_list = $result->fetch_all();
@@ -87,10 +116,16 @@ function updUser($mysqli, $user_id, $name, $phone){
 };
 
 function delUser($mysqli, $user_id){
+    $sql = "SELECT avatar FROM user WHERE id = '$user_id';";
+    $request = $mysqli->query($sql);
+    $avatar = $request->fetch_All();
+    unlink('../images/user_avatars/'.$avatar[0][0].".jpg");
+
     $sql = "UPDATE user SET flag_del = 1 WHERE id = '$user_id';";
     $request = $mysqli->query($sql);
     $sql = "UPDATE price_list SET flag_del = 1 WHERE user_id = '$user_id';";
     $request = $mysqli->query($sql);
+
 
     return 1;
 };

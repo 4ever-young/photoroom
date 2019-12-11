@@ -2,8 +2,8 @@
 require_once ('../tmp/header.html');
 include "../logic/db.php";
 
-
-$creators = getCreatorCreatorId($mysqli);
+$creators = getCreatorList($mysqli);
+$categories = getCategoryList($mysqli);
 ?>
 
 <section id="feat">
@@ -28,15 +28,17 @@ $creators = getCreatorCreatorId($mysqli);
                         <div class="form-group col-sm-6" aria-required="true">
                             <label for="type" class="h4">Тип съемки</label>
                             <select name="type" class="form-control">
-                                <option value="Свадебная">Свадебная</option>
-                                <option value="Выходная фотосессия">Выходная фотосессия</option>
-                                <option value="День рождения" selected="selected">День рождения</option>
-                                <option value="Вечеринка">Вечеринка</option>
-                                <option value="С ребенком">С ребенком</option>
-                                <option value="Выпускной">Выпускной</option>
-                                <option value="Видеосъемка">Видеосъемка</option>
-                                <option value="Съемка с воздуха">Съемка с воздуха</option>
-                                <option value="Другое">Другое</option>
+                                <?php
+                                foreach ($categories as $category){
+                                    echo '<option value="';
+                                    echo $category[0];
+                                    echo '">';
+                                    echo $category[1];
+                                    echo '</option>';
+                                }
+
+                                ?>
+
                             </select>
                         </div>
                         <div class="form-group col-sm-6">

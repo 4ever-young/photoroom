@@ -42,7 +42,17 @@ include "../tmp/header.html";
             </div>
 
             <div class="col-md-8 text-center wow fadeInUp" data-wow-delay="500ms" id="action_reg_block">
-                <img src="../images/ico/unblock-icon.png">
+
+
+                <?php
+                if ($_SESSION['avatar']){
+                    echo '<img src="../images/user_avatars/'.$_SESSION['avatar'].'.jpg">';
+
+                }
+                else{
+                    echo '<img src="../images/ico/unblock-icon.png">';
+                }
+                ?>
                 <h4><?php echo $_SESSION['user_name']; ?>, Вы уже авторизованы!</h4>
                 <form name="form" action="../logic/authorization.php" method="post">
                     <div class="row">
